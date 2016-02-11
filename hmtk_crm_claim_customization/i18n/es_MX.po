@@ -1,0 +1,129 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* hmtk_crm_claim_customization
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 8.0-20150729\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-03 11:55+0000\n"
+"PO-Revision-Date: 2015-12-03 11:55+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: hmtk_crm_claim_customization
+#: field:crm.claim,apply_guarantee:0
+msgid "Apply guarantee"
+msgstr "Aplicar garantia"
+
+#. module: hmtk_crm_claim_customization
+#: model:ir.model,name:hmtk_crm_claim_customization.model_crm_claim
+msgid "Claim"
+msgstr "Reclamación"
+
+#. module: hmtk_crm_claim_customization
+#: view:crm.claim:0
+msgid "Claim Subject"
+msgstr "Motivo de la reclamación"
+
+#. module: hmtk_crm_claim_customization
+#: field:product.replace.line,create_uid:0
+msgid "Created by"
+msgstr "Created by"
+
+#. module: hmtk_crm_claim_customization
+#: field:product.replace.line,create_date:0
+msgid "Created on"
+msgstr "Created on"
+
+#. module: hmtk_crm_claim_customization
+#: field:product.replace.line,claim_id:0
+msgid "Customer complaint"
+msgstr "Customer complaint"
+
+#. module: hmtk_crm_claim_customization
+#: field:crm.claim,customer_marketing_date:0
+msgid "Date customer marketing"
+msgstr "Fecha de comercialización"
+
+#. module: hmtk_crm_claim_customization
+#: view:crm.claim:hmtk_crm_claim_customization.view_crm_case_claims_form_view_inherit
+#: field:crm.claim,diagnosis_area:0
+msgid "Diagnosis production area"
+msgstr "Diagnostico del area de producción"
+
+#. module: hmtk_crm_claim_customization
+#: field:crm.claim,equipment_model:0
+msgid "Equipment model"
+msgstr "Modelo del equipo"
+
+#. module: hmtk_crm_claim_customization
+#: field:crm.claim,equipment_series:0
+msgid "Equipment series"
+msgstr "Serie del equipo"
+
+#. module: hmtk_crm_claim_customization
+#: view:crm.claim:hmtk_crm_claim_customization.view_crm_case_claims_form_view_inherit
+msgid "Fault detected by the user"
+msgstr "Falla detectada por el usuario"
+
+#. module: hmtk_crm_claim_customization
+#: field:product.replace.line,id:0
+msgid "ID"
+msgstr "ID"
+
+#. module: hmtk_crm_claim_customization
+#: field:product.replace.line,write_uid:0
+msgid "Last Updated by"
+msgstr "Last Updated by"
+
+#. module: hmtk_crm_claim_customization
+#: field:product.replace.line,write_date:0
+msgid "Last Updated on"
+msgstr "Last Updated on"
+
+#. module: hmtk_crm_claim_customization
+#: field:product.replace.line,product_id:0
+msgid "Part Name"
+msgstr "Producto"
+
+#. module: hmtk_crm_claim_customization
+#: field:crm.claim,replace_part_ids:0
+#: view:crm.claim:0
+msgid "Parts to replace"
+msgstr "Piezas por reemplazar"
+
+#. module: hmtk_crm_claim_customization
+#: field:product.replace.line,product_uom:0
+msgid "Product Unit of Measure"
+msgstr "Unidad de medida"
+
+#. module: hmtk_crm_claim_customization
+#: field:product.replace.line,product_qty:0
+msgid "Quantity"
+msgstr "Cantidad"
+
+#. module: hmtk_crm_claim_customization
+#: field:crm.claim,production_receipt_date:0
+msgid "Receipt of production to marketing"
+msgstr "Fecha de recepción de producción a comercialización"
+
+#. module: hmtk_crm_claim_customization
+#: model:ir.model,name:hmtk_crm_claim_customization.model_product_replace_line
+msgid "Replace parts"
+msgstr "Piezas por reemplazar"
+
+#. module: hmtk_crm_claim_customization
+#: view:crm.claim:hmtk_crm_claim_customization.view_crm_case_claims_form_view_inherit
+#: field:crm.claim,equipment_received_state:0
+msgid "State in the equipment is received"
+msgstr "Estado en que se recibe el equipo"
+
+#. module: hmtk_crm_claim_customization
+#: field:crm.claim,warehouse_receipt_date:0
+msgid "Warehouse receipt date to commercialization and production"
+msgstr "Fecha de recepción de almacen a comercialización y producción"

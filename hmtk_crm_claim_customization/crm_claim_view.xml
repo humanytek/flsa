@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+    
+        <record id="view_crm_case_claims_form_view_inherit" model="ir.ui.view">
+            <field name="name">CRM - Claims Form</field>
+            <field name="model">crm.claim</field>
+            <field name="inherit_id" ref="crm_claim.crm_case_claims_form_view"/>
+            <field name="arch" type="xml">
+            	<xpath expr="//field[@name='date']" position="after">
+                     <field name="apply_guarantee" groups="hmtk_crm_claim_customization.group_hmtk_claim_admin"/>
+                     <field name="warehouse_receipt_date" />
+                     <field name="production_receipt_date"/>
+                     <field name="customer_marketing_date"/>
+                </xpath>
+                <xpath expr="//notebook/page/separator[@string='Claim/Action Description']" position="attributes">
+                     <attribute name='string'>Fault detected by the user</attribute>
+                </xpath>
+                <xpath expr="//field[@name='user_id']" position="attributes">
+                     <attribute name='invisible'>1</attribute>
+                </xpath>
+                <xpath expr="//notebook/page/group/field[@name='ref']" position="after">
+                	<group colspan="4" col="4">
+	                    <field name="equipment_model"/>
+	                    <field name="equipment_series"/>
+                    </group>
+                </xpath>
+                <xpath expr="//notebook/page/field[@name='description']" position="after">
+                	<separator colspan="4" string="State in the equipment is received"/>
+                    <field name="equipment_received_state" colspan="4" nolabel="1"/>
+                    <separator colspan="4" string="Diagnosis production area"/>
+                    <field name="diagnosis_area" colspan="4" nolabel="1"/>
+                    <separator string="Parts to replace" />
+                    <field name="replace_part_ids">
+	                    <tree string="" editable="top">
+							<field name="product_id" required="1" on_change="onchange_product_id(product_id)"/>
+							<field name="product_qty" />
+							<field name="product_uom" />
+						</tree>
+					</field>
+                </xpath>
+                <xpath expr="//field[@name='name']" position="attributes">
+                    <attribute name="string">Claim Subject</attribute>
+                </xpath>
+            </field>
+        </record>
+        
+    </data>
+</openerp>
